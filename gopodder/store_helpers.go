@@ -102,9 +102,7 @@ func ptrStringOr(s *string, def string) string {
 
 var isoTimestampLayouts = []string{
 	isoFormat,
-	time.RFC3339Nano,
 	time.RFC3339,
-	"2006-01-02T15:04:05.999999999",
 }
 
 func isoTimestampToNullInt64(s *string) sql.NullInt64 {
